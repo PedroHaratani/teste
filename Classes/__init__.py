@@ -1,2 +1,2 @@
 from .Conta import Conta
-from .Contas import COntas
+from .Contas import Contas

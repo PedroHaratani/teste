@@ -12,11 +12,14 @@ class Conta:
     def getDataLeitura(self):
         return self.__dataLeitura.strftime(" %d %m %Y")
 
+    def getDataPagamento(self):
+        return self.__dataPagamento.strftime(" %d %m %Y")
+
     def getKwGasto(self) -> int:
         return self.__kw_Gasto
 
     def getValorPagar(self) -> float:
         return self.__valor_Pagar
 
-    def getDadosConta() -> str:
-        pass
+    def getDadosConta(self) -> str:
+        return f"Conta: {self.__n_Conta}, Conta: {self.__dataLeitura}, Conta: {self.__n_Leitura}, Conta: {self.__kw_Gasto}, Conta: {self.__valor_Pagar}, Conta: {self.__dataPagamento}"
